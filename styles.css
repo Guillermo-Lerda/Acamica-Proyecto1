@@ -17,6 +17,7 @@ li,
 a {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
     color: #060A24;
     width: 106px;
@@ -49,11 +50,14 @@ a {
     color: #00F3BB;
     text-decoration: line-through;
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
 }
 
 .nav-links li a:active {
     color: rgba(6, 10, 36, 0.56);
     text-decoration: line-through;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
 }
 
 .icon-menu .superior,
@@ -175,7 +179,7 @@ a {
     }
 
     #btn-menu:checked~.menu-mobile ul {
-        left: 1px;
+        left: 0;
     }
 
     .menu-mobile li {
@@ -187,6 +191,7 @@ a {
         color: #00F3BB;
         text-decoration: line-through;
         font-family: 'IBM Plex Mono', monospace;
+        font-weight: 500;
     }
 
     .menu-mobile li a:active {
@@ -244,11 +249,7 @@ a {
 }
 
 .boton-uno {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 18px;
-    color: #060A24;
-    text-align: center;
-    line-height: 24px;
+    display: block;
     width: 226px;
     height: 56px;
     border: none;
@@ -256,12 +257,21 @@ a {
     margin-left: 200px;
     margin-top: 56px;
     cursor: pointer;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    color: #060A24;
 }
 
-button:hover {
+.boton-uno:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    line-height: 50px;
     color:#FFFFFF;
-    letter-spacing: 0;
+    letter-spacing: 0;  
 }
 
 @media screen and (max-width: 320px) {
@@ -292,6 +302,7 @@ button:hover {
     }
 
     .boton-uno {
+        display: block;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 16px;
         text-align: center;
@@ -304,7 +315,7 @@ button:hover {
         cursor: pointer;
     }
 
-    button:hover {
+    .boton-uno:hover {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         color:#FFFFFF;
         letter-spacing: 0;
@@ -718,8 +729,11 @@ img {
 }
 
 .boton-ultimo {
+    display: block;
+    position: absolute;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 18px;
+    line-height: 50px;
     text-align: center;
     width: 345px;
     height: 56px;
@@ -734,6 +748,8 @@ img {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     color:#FFFFFF;
     letter-spacing: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 320px) {
@@ -761,6 +777,7 @@ img {
     }
     
     .boton-ultimo {
+        display: block;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 16px;
         text-align: center;
@@ -778,6 +795,8 @@ img {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
         color:#FFFFFF;
         letter-spacing: 0;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 500;
     }
 }
 /* FIN SECTION-SIXTH */
